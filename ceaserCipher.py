@@ -21,7 +21,7 @@ class Ceaser(object):
 		cipher=""
 		for i in text:
 
-			if i==" ":
+			if i not in alph:
 				cipher+=" "
 			else:
 				shifted = alph.index(i)-shift
@@ -33,6 +33,6 @@ class Ceaser(object):
 		return cipher
 
 a= Ceaser()
-b= a.encrypt("defend the east wall of the castle",15)
-print b
-print a.decrypt(b,15)
+b= "et, tu brute????? nruqjrjsyx hfjxfw hnumjw fzymtw- mnrfsxmz xfnsn\n"
+for i in range(1,25):
+	print a.decrypt(b,i)
